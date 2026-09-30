@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Geneva';
+    }
+
+    .ai {
+      background-image: linear-gradient(to bottom, rgb(136, 187, 255), rgb(105, 157, 255));
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      padding: 10vh;
+      padding: 10vw;
+      gap: 2vw;
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+
+    .fundo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 20vw;
+      padding: 5vh;
+      border-radius: 20px;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      height: 400px;
+      background-image: linear-gradient(to top, rgb(136, 187, 255), rgb(105, 157, 255));
+    }
+
+    .senha {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: white;
+      color: rgb(105, 157, 255);
+      padding: 5vh;
+      width: 20vw;
+      height: 70%;
+    }
+
+    .ttl {
+      font-size: 1.9vw;
+    }
+
+    .subttl {
+      font-size: 1vw;
+      color: rgb(191, 217, 255);
+    }
+
+    #oi {
+      width: 30vw;
+    }
+
+    .spc1 {
+      height: 90px;
+    }
+
+    .spc2 {
+      height: 20px;
+    }
+    .check{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       background-color: white;
+      color: rgb(105, 157, 255);
+      width: 20vw;
+      height: 50%;
+      border-radius: 20px;
+    }
+
+    button {
+      background-color: white;
+      border: 0px;
+      border-radius: 10vw;
+      height: 20vh;
+      width: 20vw;
+      color: rgb(105, 157, 255);
+    }
+
+    button:hover {
+      background-color: rgb(105, 157, 255);
+      color: white;
+    }
+
+    input {
+      background-color: rgb(204, 234, 255);
+      border: 5px;
+      border-color: rgb(105, 157, 255);
+      border-radius: 10vw;
+      height: 20vh;
+      width: 20vw;
+      color: rgb(105, 157, 255);
+    }
+
+    #lembrar {
+      background-color: rgb(204, 234, 255);
+      border: 5px;
+      height: 2vh;
+      width: 2vw;
+      border-color: rgb(105, 157, 255);
+    }
+    .entrar{
+      background-color: rgb(204, 234, 255);
+      max-width: 150px;
+      max-height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ai">
+    <div class="fundo">
+      <img src="twice.png" alt="Search" width="50vw" height="50vh" style="vertical-align: middle; padding-bottom: 3vh;">
+      <div class="spc1"> </div>
+      <div class="senha">
+        <p class="ttl">Sign In</p>
+        <p>Insira seu login:</p>
+        <input type="text">
+        <p>Insira sua senha:</p>
+        <input type="password" id="senha" name="password" required>
+        <div class="check">
+          <input type="checkbox" id="lembrar" name="Lembrar?" value="sim">
+          <p>Me Lembrar</p>
+          <button class="entrar" type="button"> Sign in</button>
+        </div>
+      </div>
+    </div>
+    <div class="fundo" id="oi">
+      <img src="twice.png" alt="Search" width="45vw" height="45vh" style="vertical-align: middle;">
+      <p class="ttl">THE TWICE OFFICIAL WEBSITE</p>
+      <Div class="spc1"></Div>
+      <p class="subttl">Enter to unveil the best GG of Korea</p>
+      <button type="button"> Sign in</button>
+      <Div class="spc2"></Div>
+      <button type="button"> Sign up</button>
+      <Div class="spc1"></Div>
+    </div>
+    <div class="fundo">
+      <img src="twice.png" alt="Search" width="50vw" height="50vh" style="vertical-align: middle;">
+      <div class="spc1"></div>
+      <div class="senha">
+        <p class="ttl">Sign In</p>
+        <p>Insira seu login:</p>
+        <input type="text">
+        <p>Insira seu e-mail:</p>
+        <input type="text">
+        <p>Insira sua senha:</p>
+        <input type="password" id="senha" name="password" required>
+        <div class="check">
+          <input type="checkbox" id="lembrar" name="Lembrar?" value="sim">
+          <p>Termos & Condições</p>
+          <button class="entrar" type="button"> Sign Up</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
